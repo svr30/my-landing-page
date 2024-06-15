@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.M.Srivarshini Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #ffeb3b;
+        }
+        .hero {
+            background: linear-gradient(135deg, #ff6f61, #de4313);
+            color: white;
+            padding: 5rem 1rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            background-color: #8e44ad; /* Background color changed */
+            color: #f1c40f; /* Text color changed */
+            padding: 1rem;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+        .hero .cta {
+            background-color: #3498db; /* Background color changed */
+            color: #ffffff; /* Text color changed */
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .hero .cta:hover {
+            background-color: #2980b9;
+            color: #f1c40f;
+        }
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .skills, .projects, .about, .contact {
+            background: linear-gradient(135deg, #ffeb3b, #f9a825);
+            color: #333;
+        }
+        .skills h2, .projects h2, .about h2, .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .skills ul, .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills ul li, .projects ul li {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+            background: #ffffff;
+            padding: 0.5rem;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .skills ul li:hover, .projects ul li:hover {
+            transform: scale(1.05);
+            background: #ffeb3b;
+        }
+        .projects ul li h3 {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact form input, .contact form textarea {
+            margin: 0.5rem 0;
+            padding: 0.75rem;
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+        .contact form input:focus, .contact form textarea:focus {
+            border-color: #6e8efb;
+            outline: none;
+        }
+        .contact form button {
+            padding: 0.75rem 1.5rem;
+            background-color: #6e8efb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact form button:hover {
+            background-color: #a777e3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>K.M.SRIVARSHINI</h1>
+        <p>Aspiring Software Engineer</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm an aspiring software engineer passionate about technology and innovation.</p>
+        <a href="#contact" class="cta">Get in Touch</a>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Cyber Analyst</li>
+            <li>Full Stack Developer</li>
+            <li>Web Development</li>
+            <li>ArtistryEdit</li>
+        </ul>
+        <h3>Programming Languages</h3>
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
+        </ul>
+        <h3>Web Development</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <h3>Database Management</h3>
+        <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+        </ul>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>E-commerce Website</h3>
+                <p>Developed a fully functional e-commerce website using React and Node.js.</p>
+            </li>
+            <li>
+                <h3>Machine Learning Model</h3>
+                <p>Created a machine learning model to predict stock prices using Python.</p>
+            </li>
+            <li>
+                <h3>Mobile App</h3>
+                <p>Designed a mobile app for task management using Flutter.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>.Welcome to My Portfolio!
+            Hello! I'm K.M. Srivarshini, a passionate BE CSE student at PSNA College of Engineering and Technology. With a strong foundation in computer science and engineering, I am dedicated to innovation and problem-solving through technology.
+            
+            Projects
+            Explore my projects where I apply my skills in software development and engineering principles:
+            
+            E-commerce Website: Developed using React and Node.js, providing a seamless shopping experience.
+            Machine Learning Model: Predicts stock prices using Python, leveraging data science and analytics.
+            Mobile App Development: Designed an efficient task management app using Flutter for enhanced productivity.
+            Skills
+            I possess a diverse range of skills in software development, web technologies, and more:
+            
+            Programming Languages: Proficient in Java, Python, C++, and JavaScript.
+            Web Development: Skilled in HTML, CSS, and JavaScript for building responsive and interactive web applications.
+            Database Management: Experienced with MySQL and MongoDB for efficient data handling and storage.
+            About Me
+            Driven by curiosity and a thirst for knowledge, I am constantly exploring new technologies and learning opportunities. My goal is to contribute meaningfully to the tech industry through innovative solutions and collaborative projects.
+            
+            Contact Me
+            Let's connect and discuss how we can collaborate on exciting projects. Feel free to reach out via email or connect with me on LinkedIn.
+            
+            Thank you for visiting!</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/sri-varshini-a55115263" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 K.M.SRIVARSHINI. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form validation
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            if (name === '' || email === '' || message === '') {
+                alert('Please fill out all fields.');
+            } else {
